@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pelispedia</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <input type="text" name="pelicula" id="pelicula" />
+          <button id="buscar" class="btn btn-primary">Buscar</button>
+        </div>
+      </div>
+      <div class="row">
+        <div id="resultado" class="col-md-12"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      jQuery(document).ready(function() {
+        var api_key = "eafcfb17";
+        $("#buscar").click(function() {
+          $.get(
+            "http://www.omdbapi.com",
+            {
+              apikey: api_key,
+              r: "json",
+              s: $("#pelicula").val()
+            },
+            function(data, status) {
+              console.log(data);
+
+              var titulo = ""; //data.Search[0].Title;
+              var year = ""; //data.Search[0].Year;
+              var imdb = ""; //data.Search[0].imdbID;
+              var poster = ""; //data.Search[0].Poster;
+              var resultado = "";
+              //var length = 'data.Search.length;
+              for (num = 0; num < data.Search.length; num++) {
+                var titulo = data.Search[num].Title;
+                var year = data.Search[num].Year;
+                var imdb = data.Search[num].imdbID;
+                var poster = data.Search[num].Poster;
+
+                resultado =
+                  '<div class="card" style="width: 18rem;"> <img src="' +
+                  poster +
+                  '" class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">' +
+                  titulo +
+                  '</h5><p class="card-text">' +
+                  year +
+                  '</p><a href="#" class="btn btn-primary" style="background-color: yellow; color: black; font-weight: bold;">' +
+                  imdb +
+                  "</a></div></div>";
+                $("#resultado").append(resultado);
+              }
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
