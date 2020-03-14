@@ -7,34 +7,100 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='css/index-style.css'>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mdb.min.css">
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" href="css/mdb.min.css">
 </head>
 <body>
     <div class="jumbotron" style="background-image: url(img/img2.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; background-attachment: fixed;">
         <h1 style="color: white;">Indice de prácticas</h1>
         <h3 style="color: #9e9e9e;">Fernando Jaime Véliz Cavazos</h3>
     </div>
-    
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <a class="btn btn-link collapsed " type="button" href="Untitled-1.html" aria-expanded="false" aria-controls="collapseOne">
+                    Página 1
+                  </a>
+                </h5>
+              </div>
             </div>
-        </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link collapsed " type="button" href="Untitled-1.html" aria-expanded="false" aria-controls="collapseOne">
+                      Página 2
+                    </a>
+                  </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link collapsed " type="button" href="ejemplo-menu/index.html" aria-expanded="false" aria-controls="collapseOne">
+                      Práctica 1
+                    </a>
+                  </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link collapsed " type="button" href="gallery/index.html" aria-expanded="false" aria-controls="collapseOne">
+                      Galería Flexbox
+                    </a>
+                  </h5>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <a class="btn btn-link collapsed " type="button" href="bootstrap/index.html" aria-expanded="false" aria-controls="collapseOne">
+                      Práctica con Bootstrap
+                    </a>
+                  </h5>
+                </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Ejemplos con Bootstrap
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li><a href="bootstrap1/index.html">Index</a></li>
+                        <li><a href="bootstrap1/b1.html">Ejemplo 1</a></li>
+                        <li><a href="bootstrap1/b2.html">Ejemplo 2 (Galería)</a></li>
+                        <li><a href="bootstrap1/curriculum/index.html">Curriculum</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseTwo">
+                    Javascript
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <ul>
+                        <li><a href="javascript/js1/index.html">Práctica 1</a></li>
+                        <li><a href="javascript/js2/index.html">Práctica 2</a></li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
     </div>
-
-    <ul>
-    <li><a href="Untitled-1.html">Página 1</a></li>
-    <li><a href="Untitled-1-Light.html">Página 2</a></li>
-    <li><a href="ejemplo-menu/index.html">Menú</a></li>
-    <li><a href="practica1/index.html">Práctica 1</a></li>
-    <li><a href="gallery/index.html">Galería Flexbox</a></li>
-    <li><a href="bootstrap/index.html">Práctica con Bootstrap</a></li>
-    <li><a href="bootstrap1/index.html">Ejemplos Bootstrap</a></li>
-    </ul>
-
-    
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
