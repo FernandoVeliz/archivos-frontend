@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Parsley</title>
+    <link rel="stylesheet" href="css/parsley.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/parsley.min.js"></script>
+
+</head>
+
+<body>
+    <div class="section">
+        <h1>Formulario hecho con Parsley</h1>
+    </div>
+
+
+    <form id="formulario" data-parsley-validate="">
+        <label for="nombre">Nombre(s): * </label>
+        <input type="text" class="form-control" name="nombre" required="">
+
+        <label for="apellido">Apellido(s): *</label>
+        <input type="text" class="form-control" name="apellido" required="">
+
+        <label for="email">E-mail: *</label>
+        <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
+
+        <br>
+        <input type="submit" class="btn btn-default" value="validate">
+
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="js/parsley.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('formulario').parsley();
+        });
+    </script>
+</body>
+
+</html>
