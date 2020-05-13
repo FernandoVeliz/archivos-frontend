@@ -1,0 +1,75 @@
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.menu li a {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.fondo-principal {
+    background-image: url("../images/fondo.png");
+    background-position: center; /*La imagen se posiciona en el centro*/
+    background-repeat: no-repeat; /*No se repite (en caso de que la imagen sea de menor resolucion a comparacion de la resolucion de la pantalla*/
+    background-size: cover; /*Cubre toda la pantalla*/
+    height: 1440px;
+}
+
+.padding {
+    padding: 160px;
+}
+
+.texto-header {
+    padding-top: 400px;
+    font-family: 'Montserrat', sans-serif;
+}
+.texto-header p {
+    font-weight: 800;
+}
+
+.boton-negro {
+    background-color: black;
+    padding: 10px 20px;
+    color: white;
+}
+
+.boton-negro:hover {
+    background-color: white;
+    color: black;
+}
+
+h2 {
+    font-weight: 800;
+}
+
+h1{
+    font-weight: 800;
+}
+
+.h-gris {
+    color: #a2a2a2;
+}
+
+.fondo-bosque {
+    background-image: url("../images/fondo-bosque.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.fondo-bosque h1 {
+    color: white;
+}
+
+.fondo-bosque p {
+    color: white;
+}
