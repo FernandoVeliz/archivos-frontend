@@ -73,3 +73,30 @@ h1{
 .fondo-bosque p {
     color: white;
 }
+
+.h-footer {
+    font-weight: 800;
+    color: white;
+    background:black;
+    padding: 5px;
+    display: inline-block;
+}
+
+.footer a {
+    color: white;
+    background: black;
+    border-radius: 50%;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer a:hover {
+    color: black;
+    background: whitesmoke;
+}
+
+.fondo-footer {
+    padding: 15px;
+    background-color: #f3f3f3;
+}
