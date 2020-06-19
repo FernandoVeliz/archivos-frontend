@@ -1,0 +1,33 @@
+#navbarNav ul li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.fondo-menu {
+    background-color: rgba(255,127,127,0.6);
+}
+
+.h-blanco {
+    color: white;
+    text-transform: uppercase;
+}
+
+.h-rosa {
+    color: rgb(255, 127, 127);
+    text-transform: uppercase;
+}
+
+.p-rosa {
+    color: rgb(255, 127, 127);
+}
+
+.p-blanco {
+    color:white;
+}
+
+.btn-blanco {
+    padding: 5px 10px;
+    background-color: white;
+
+}
